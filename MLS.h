@@ -1,10 +1,5 @@
 /*
- *  SchaeferMLS.h
- *  CurveMatching
- *
- *  Created by Roy Shilkrot on 12/28/12.
- *  Copyright 2012 MIT. All rights reserved.
- *
+ *  MLS.h
  *	Implementing "Image deformation using moving least squares", S. Schaefer et al. 2006
  *  http://dl.acm.org/citation.cfm?id=1141920
  *	(for 2D curves)
@@ -14,13 +9,13 @@
 #include <numeric>
 #include <functional>
 
-#include "CurveCSS.h"
+#include "CurveUtility.h"
 
 #define P2V(p) Vec2d((p).x,(p).y)
 #define V2P(v) Point2d((v)[0],(v)[1])
 
 template<typename T>
-class SchaeferMLS {
+class MLS {
 	Mat_<double> A;
 	vector<vector<Matx22d> > As;
 	vector<double> mu_s;

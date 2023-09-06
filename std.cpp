@@ -1,9 +1,4 @@
 /*
- *  std.cpp
- *  CurveMatching
- *
- *  Created by Roy Shilkrot on 1/1/13.
- *  Copyright 2013 MIT. All rights reserved.
  *
  */
 #include "std.h"

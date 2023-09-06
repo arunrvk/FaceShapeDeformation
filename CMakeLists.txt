@@ -1,17 +1,15 @@
-cmake_minimum_required (VERSION 2.6) 
+cmake_minimum_required (VERSION 2.8)
 project (ShapeDeformation) 
 
 set (CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/CMake")
-
-#include(cotire)
 
 find_package(OpenCV REQUIRED)
 
 add_executable(ShapeDeformation 
 	std.cpp std.h
-	SchaeferMLS.h SchaeferMLS.cpp
-	CurveCSS.cpp CurveCSS.h 
-	CurveSignature.cpp CurveSignature.h
+		MLS.h MLS.cpp
+		CurveUtility.cpp CurveUtility.h
+		Curve.cpp Curve.h
 	)
 	
 target_link_libraries(ShapeDeformation
@@ -20,5 +18,3 @@ target_link_libraries(ShapeDeformation
 	
 set_target_properties(ShapeDeformation PROPERTIES COTIRE_CXX_PREFIX_HEADER_INIT "std.h")
 set_target_properties(ShapeDeformation PROPERTIES COMPILE_FLAGS "-DWITHOUT_OPENCL")
-
-#cotire(ShapeDeformation)

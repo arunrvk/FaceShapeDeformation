@@ -1,8 +1,4 @@
 /*
- *  CurveCSS.cpp
- *  CurveMatching
- *
- *  Created by Roy Shilkrot on 11/28/12.
  *
  */
 
@@ -10,7 +6,7 @@
 
 using namespace cv;
 
-#include "CurveCSS.h"
+#include "CurveUtility.h"
 
 #ifdef HAVE_MATHGL
 #include <mgl2/mgl.h>

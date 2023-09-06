@@ -1,9 +1,4 @@
 /*
- *  CurveSignature.cpp
- *  CurveMatching
- *
- *  Created by Roy Shilkrot on 12/7/12.
- *  Copyright 2012 MIT. All rights reserved.
  *
  */
 
@@ -13,8 +8,8 @@
 #include <opencv2/flann/dist.h>
 using namespace cv;
 
-#include "CurveCSS.h"
-#include "CurveSignature.h"
+#include "CurveUtility.h"
+#include "Curve.h"
 
 #ifndef WITHOUT_OPENCL
 #include "CLSignatureMatching.h"

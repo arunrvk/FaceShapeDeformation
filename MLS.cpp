@@ -1,5 +1,5 @@
 /*
- *  SchaeferMLS.cpp
+ *  MLS.cpp
  *  CurveMatching
  *
  *  Created by Roy Shilkrot on 12/28/12.
@@ -10,10 +10,10 @@
 #include "std.h"
 using namespace cv;
 
-#include "SchaeferMLS.h"
-#include "CurveSignature.h"
+#include "MLS.h"
+#include "Curve.h"
 
-SchaeferMLS<double> smls;
+MLS<double> smls;
 Mat visualized_curve;
 vector<Point> target_curve;
 int mls_def_type;
