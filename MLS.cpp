@@ -1,9 +1,4 @@
 /*
- *  MLS.cpp
- *  CurveMatching
- *
- *  Created by Roy Shilkrot on 12/28/12.
- *  Copyright 2012 MIT. All rights reserved.
  *
  */
 
